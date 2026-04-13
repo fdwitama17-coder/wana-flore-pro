@@ -177,3 +177,99 @@ body {
   from {opacity: 0;}
   to {opacity: 1;}
 }
+.nav a.active {
+  border-bottom: 2px solid #d4af37;
+}
+section {
+  animation: fadeUp 0.6s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* HERO PRODUK */
+.produk-hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.produk-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+}
+
+.produk-hero p {
+  color: #777;
+}
+
+/* GRID */
+.produk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 40px;
+  padding: 40px;
+}
+
+/* CARD */
+.produk-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.produk-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.produk-card:hover {
+  transform: translateY(-10px);
+}
+
+/* INFO */
+.produk-card .info {
+  padding: 20px;
+}
+
+.produk-card h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.produk-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.produk-card span {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* BUTTON */
+.btn-primary {
+  background: #d4af37;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+.produk-card {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+.produk-card img {
+  transition: 0.4s;
+}
+
+.produk-card:hover img {
+  transform: scale(1.05);
+}
