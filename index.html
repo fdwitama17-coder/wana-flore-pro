@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Wana Flore - Premium Florist</title>
+
+  <!-- Google Font (biar mahal look) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <div class="container nav">
+    <div class="logo">
+  <img src="images/logo.png" alt="Wana Flore">
+</div>
+    <nav>
+      <a href="#">Beranda</a>
+      <a href="#">Produk</a>
+      <a href="#">Tentang</a>
+      <a href="#">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Keindahan Liar Yang Tumbuh Dengan Anggun</h1>
+    <p>Orchid, Decoration And Flower Arrangements</p>
+    <a href="https://wa.me/6282127703233" class="btn">Order Sekarang</a>
+  </div>
+</section>
+<section class="fitur">
+  <div>🌸 Bunga Fresh Setiap Hari</div>
+  <div>🚚 Same Day Delivery</div>
+  <div>🎁 Free Kartu Ucapan</div>
+</section>
+<section class="produk">
+  <div class="container">
+    <h2>Best Seller</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="images/bunga1.jpeg">
+        <div class="card-body">
+          <h3>Rangkaian Lily Premium</h3>
+          <p>Rp350.000</p>
+          <a href="shop.html" class="btn small">Lihat Detail</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/bunga2.jpeg">
+        <div class="card-body">
+          <h3>Rangkaian Anggrek Premium</h3>
+          <p>Rp350.000</p>
+          <a href="shop.html" class="btn small">Lihat Detail</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/bunga3.jpeg">
+        <div class="card-body">
+          <h3>Rangkaian Sedap Malam Premium</h3>
+          <p>Rp300.000</p>
+          <a href="shop.html" class="btn small">Lihat Detail</a>
+    </div>
+  </div>
+  <div class="card">
+        <img src="images/bunga4.jpeg">
+        <div class="card-body">
+          <h3>Rangkaian Sedap Malam Premium</h3>
+          <p>Rp300.000</p>
+          <a href="shop.html" class="btn small">Lihat Detail</a>
+
+
+</section>
+<section class="about">
+  <div class="container">
+    <h2>Tentang Wana Flore</h2>
+    <p>
+      Wana Flore bukan sekadar toko bunga, melainkan sebuah ruang kurasi yang menghadirkan pengalaman floral penuh makna, terinspirasi dari keindahan alam liar yang tumbuh dengan anggun. Berdiri dari kecintaan yang mendalam terhadap dunia flora, Wana Flore menghadirkan pilihan terbaik dari anggrek lokal berkualitas tinggi hingga bunga potong impor premium yang dipilih secara cermat untuk setiap momen istimewa
+
+    </p>
+  </div>
+</section>
+<section class="testimoni">
+  <div class="container">
+    <h2>Testimoni Customer</h2>
+
+    <div class="testi-box">
+      <p>"Bunganya cantik banget, sesuai ekspektasi!"</p>
+    </div>
+
+    <div class="testi-box">
+      <p>"Pengiriman cepat & rapi!"</p>
+    </div>
+
+  </div>
+</section>
+<section class="cta">
+  <h2>Pesan Sekarang Sebelum Kehabisan</h2>
+  <a href="https://wa.me/6282127703233" class="btn">Chat WhatsApp</a>
+</section>
+
+<!-- ABOUT SHORT -->
+<section class="about">
+  <div class="container">
+    <h2>Crafted with Feeling</h2>
+    <p>
+      Setiap buket Wana Flore dirangkai dengan detail dan rasa,
+      untuk menghadirkan momen yang tak terlupakan.
+    </p>
+  </div>
+</section>
+
+<!-- PRODUK -->
+<section class="produk">
+  <div class="container">
+    <h2>Our Collection</h2>
+
+    <!-- FILTER -->
+    <div class="filter">
+      <button onclick="filterProduk('all')">All</button>
+      <button onclick="filterProduk('wisuda')">Wisuda</button>
+      <button onclick="filterProduk('anniversary')">Anniversary</button>
+      <button onclick="filterProduk('custom')">Custom</button>
+    </div>
+
+    <!-- GRID -->
+    <div class="grid" id="produkList">
+
+      <!-- ITEM -->
+      <div class="card wisuda">
+        <img src="images/bunga5.jpg">
+        <div class="card-body">
+          <h3>Bouquet Wisuda Elegant</h3>
+          <p>Rp175.000</p>
+          <a href="https://wa.me/6282127703233?text=Halo%20saya%20mau%20pesan%20Buket%20Wisuda%20Elegant" class="btn small">Pesan</a>
+        </div>
+      </div>
+
+      <div class="card anniversary">
+        <img src="images/bunga6.jpg">
+        <div class="card-body">
+          <h3>Bouquet Anniversary Rose</h3>
+          <p>Rp180.000</p>
+          <a href="https://wa.me/6282127703233?text=Halo%20saya%20mau%20pesan%20Buket%20Anniversary%20Rose" class="btn small">Pesan</a>
+        </div>
+      </div>
+
+      <div class="card custom">
+        <img src="images/bunga7.jpg">
+        <div class="card-body">
+          <h3>Bouquet Custom Premium</h3>
+          <p>Mulai Rp150.000</p>
+          <a href="https://wa.me/6282127703233?text=Halo%20saya%20mau%20custom%20buket" class="btn small">Pesan</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section class="testimoni">
+  <div class="container">
+    <h2>What They Say</h2>
+
+    <div class="testi-box">
+      <p>"Bunganya super cantik, classy banget!"</p>
+      <span>- Customer</span>
+    </div>
+
+    <div class="testi-box">
+      <p>"Packaging rapi & pengiriman cepat!"</p>
+      <span>- Customer</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Make Someone Smile Today</h2>
+  <a href="https://wa.me/628XXXXXXX" class="btn">Order via WhatsApp</a>
+</section>
+
+</body>
+<script src="script.js"></script>
+</html>
+<div class="card wisuda">
+  <img src="images/namafoto.jpg">
+  <div class="card-body">
+    <h3>Nama Produk</h3>
+    <p>RpXXX</p>
+    <a href="https://wa.me/628XXXXXXX?text=Halo%20saya%20mau%20pesan%20Nama%20Produk" class="btn small">Pesan</a>
+  </div>
+</div>
