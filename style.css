@@ -153,3 +153,19 @@ nav a {
   height: 150px;
   object-fit: contain;
 }
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+}
