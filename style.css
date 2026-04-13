@@ -302,3 +302,78 @@ section {
 .about-text p {
   font-size: 18px;
 }
+/* HERO */
+.about-hero {
+  height: 80vh;
+  background: url('images/banner-about.jpg') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-text {
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+}
+
+/* STORY */
+.about-story {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+.about-story h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* SPLIT */
+.about-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.about-split img {
+  width: 100%;
+}
+
+.about-split .text {
+  padding: 40px;
+}
+
+/* VALUES */
+.about-values {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.about-values .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 30px;
+}
+
+.value {
+  padding: 20px;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 80px 20px;
+}
